@@ -1,0 +1,132 @@
+body {
+  background-image: url('wall-texture.jpeg');
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.album-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.album-card {
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s; 
+  background: linear-gradient(to right, #00b0ff, #00bfff, #00b0ff);
+  border: 3px inset #4A235A;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.album-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.album-card img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.album-card h2 {
+  padding: 20px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333333;
+}
+
+.album-card a {
+  text-decoration: none;
+}
+
+.album-card p {
+  padding: 20px;
+  font-size: 1em;
+  font-weight: normal;
+  text-align: left;
+  color: #444;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.photos-grid {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.photo-item {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 60px;
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+  max-height: 95vh;
+  object-fit: contain;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e0e0e0;
+  color: #444;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 4px;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+.heading-word {
+  display: inline-block;
+}
+.word-1 {
+  color: blue;
+  font-family: 'Open Sans', sans-serif;
+}
+.word-2 {
+  color: purple;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+}
